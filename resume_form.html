@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Form</title>
+</head>
+<body style="text-align: center; background-color: #f2f2f2;">
+    <h1>Harvard-style Resume Form</h1>
+    <form method="POST" action="{{ url_for('resume_form') }}" style="display: inline-block; text-align: left; background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required style="width: 300px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required style="width: 300px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone" required style="width: 300px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"><br><br>
+        
+        <h2>Education</h2>
+        <textarea id="education" name="education" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea><br><br>
+
+        <h2>Internship</h2>
+        <textarea id="internship" name="internship" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea><br><br>
+
+        <h2>Experience</h2>
+        <textarea id="experience" name="experience" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea><br><br>
+
+        <h2>Projects</h2>
+        <textarea id="projects" name="projects" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea><br><br>
+
+        <h2>Leadership and Activities</h2>
+        <textarea id="leadership_activities" name="leadership_activities" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea><br><br>
+
+        <h2>Skills</h2>
+        <textarea id="skills" name="skills" rows="4" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea><br><br>
+
+        <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; font-size: 16px; cursor: pointer;">Generate</button>
+    </form>
+</body>
+</html>
